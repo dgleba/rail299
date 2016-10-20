@@ -45,3 +45,11 @@ group :development do
   gem 'spring'
 end
 
+# 
+# 
+gem 'gem 'sass-rails', '>= 3.2'
+gem 'populator'
+gem 'faker'
+gem 'simple_form'
+# # https://github.com/twbs/bootstrap-sass
+# 
