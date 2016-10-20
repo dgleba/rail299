@@ -52,4 +52,3 @@ gem 'faker'
 gem 'simple_form'
 # # https://github.com/twbs/bootstrap-sass
 # 
-gem 'sass-rails', '>= 3.2'
