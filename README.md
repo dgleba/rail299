@@ -71,7 +71,7 @@ ref..
 
 ---
   
-- vsimple_form checkboxes save to database column as array but will not retrieve from database and re-check boxes on edit
+- simple_form checkboxes save to database column as array but will not retrieve from database and re-check boxes on edit
 
 - simple_form pre-check check_boxes from database on edit
 
