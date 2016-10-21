@@ -5,8 +5,8 @@
  - Start app. 
  - visit localhost:3000/products. 
  - hit edit. 
- - checkboxes are not checked to match what is in the database.
- - 
+ - checkboxes are not checked to match what is in the database.  
+
 
 
 #### More:
