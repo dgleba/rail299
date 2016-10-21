@@ -50,5 +50,4 @@ end
 gem 'populator'
 gem 'faker'
 gem 'simple_form'
-# # https://github.com/twbs/bootstrap-sass
-# 
+ 

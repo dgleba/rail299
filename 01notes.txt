@@ -1,0 +1,14 @@
+
+
+rails g scaffold Product name feature  \
+ -f
+ 
+ 
+ 
+rails g scaffold Feature name sort:integer active:integer 
+rails g scaffold Product2 name feature:references 
+ 
+ 
+rails d scaffold Feature 
+rails d scaffold Product2 
+  

@@ -3,10 +3,67 @@
 
   <div class="form-inputs">
     <%= f.input :name %>
-    <%= f.input :feature %>
+   <%= f.input :feature, as: :check_boxes, 
+        collection:  ["ac", "StereoRadio", "4wheeldrive"], :checked => @product.feature %>
+
+    <%= puts @product.feature %>
+    <%= puts f.object.feature %>
+        
   </div>
 
   <div class="form-actions">
     <%= f.button :submit %>
   </div>
 <% end %>
+
+
+<%# comment..================================================================= %>  
+ 
+<% if false %>
+block comment begins.. code to be commented out..........................
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Prints to console from the puts statement I added above....
+    ["StereoRadio", ""]
+
+will not check the boxes after pressing edit...
+
+    <%= f.input :feature, as: :check_boxes, 
+        collection:  ["ac", "StereoRadio", "4wheeldrive"], :checked => @product.feature %>
+
+        
+this will check the StereoRadio box...
+
+    <%= f.input :feature, as: :check_boxes, 
+        collection:  ["ac", "StereoRadio", "4wheeldrive"], :checked => ["StereoRadio", ""] %>
+
+        
+ref.. 
+  = f.input :features, as: :check_boxes, 
+    collection:  ["ac", "Stereo Radio", "4 wheel drive"], :checked => f.object.feature.to_s
+ 
+orig.. 
+     <%= f.input :feature %> 
+
+ref.. 
+
+http://stackoverflow.com/questions/13823655/rails-multiple-checkboxes-in-1-db-column-saves-correctly-but-doesnt-show-as-ch
+
+http://stackoverflow.com/questions/5500923/how-to-preselect-an-association-checkbox-using-simple-form?rq=1
+
+  
+simple_form checkboxes save to database column as array but will not retrieve from database and re-check boxes on edit
+
+simple_form pre-check check_boxes from database on edit
+
+
+f.input :my_boolean, input_html: { checked: @object.my_boolean }
+
+
+
+end block comment    
+<% end %>
+   
+<%# comment..================================================================= %>  
+ 
