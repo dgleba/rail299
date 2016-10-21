@@ -1,6 +1,12 @@
 
 ## Example app showing issue..  
-	- checkboxes will not re-check upon edit.
+	
+- checkboxes will not re-check upon edit. 
+ - Start app. 
+ - visit localhost:3000/products. 
+ - hit edit. 
+ - checkboxes are not checked to match what is in the database.
+ - 
 
 
 #### More:
@@ -53,7 +59,7 @@ this will check the StereoRadio box...
 
 ref.. 
 
- - [one](http://stackoverflow.com/questions/13823655/rails-multiple-checkboxes-in-1-db-column-saves-correctly-but-doesnt-show-as-ch)
+- [one](http://stackoverflow.com/questions/13823655/rails-multiple-checkboxes-in-1-db-column-saves-correctly-but-doesnt-show-as-ch)
 - [two](http://stackoverflow.com/questions/5500923/how-to-preselect-an-association-checkbox-using-simple-form?rq=1)
 
 ---
