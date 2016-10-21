@@ -14,7 +14,14 @@
 - check boxes do save to database.  
 - I cannot get them to show as checked based on database entries.
 - This is a simple app with little more than simple_form installed just to test the checkboxes from local list.
-- 
+
+
+#### Scaffold:
+
+``` 
+rails g scaffold Product name feature  
+```
+
 _____________
 
 ### products view _form:
