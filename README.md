@@ -53,10 +53,10 @@ this will check the StereoRadio box...
 
 ref.. 
 
- - [http://stackoverflow.com/questions/13823655/rails-multiple-checkboxes-in-1-db-column-saves-correctly-but-doesnt-show-as-ch
-](http://stackoverflow.com/questions/13823655/rails-multiple-checkboxes-in-1-db-column-saves-correctly-but-doesnt-show-as-ch)
+ - [one](http://stackoverflow.com/questions/13823655/rails-multiple-checkboxes-in-1-db-column-saves-correctly-but-doesnt-show-as-ch)
 - [two](http://stackoverflow.com/questions/5500923/how-to-preselect-an-association-checkbox-using-simple-form?rq=1)
 
+---
   
 - vsimple_form checkboxes save to database column as array but will not retrieve from database and re-check boxes on edit
 
