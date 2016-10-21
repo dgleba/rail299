@@ -12,3 +12,31 @@ rails g scaffold Product2 name feature:references
 rails d scaffold Feature 
 rails d scaffold Product2 
   
+  
+rails g migration change_data_type_for_feature_id_to_string
+  
+class ChangeDataTypeForFieldname < ActiveRecord::Migration
+  def self.up
+    change_table :tablename do |t|
+      t.change :fieldname, :date
+    end
+  end
+  def self.down
+    change_table :tablename do |t|
+      t.change :fieldname, :datetime
+    end
+  end
+end  
+
+  # def change
+  # end
+  def self.up
+    change_table :features do |t|
+      t.change :feature_id, :string
+    end
+  end
+  def self.down
+    change_table :features do |t|
+      t.change :feature_id, :integer
+    end
+  end

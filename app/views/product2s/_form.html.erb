@@ -1,0 +1,44 @@
+<%= simple_form_for(@product2) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+   
+    <%= f.association :feature,
+    :collection => @product2.feature.collect{ |p| [p.name, p.id] },
+    :as => :check_boxes,
+    :checked => params[:id]  %>
+    
+    
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+
+
+
+<%# comment..============================================================== %>  
+ 
+<% if false %>
+block comment begins.. code to be commented out...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    <%= f.association :feature %>
+ 
+
+ref.. 
+
+http://stackoverflow.com/questions/5500923/how-to-preselect-an-association-checkbox-using-simple-form?rq=1
+http://stackoverflow.com/questions/5500923/how-to-preselect-an-association-checkbox-using-simple-form?rq=1
+
+http://stackoverflow.com/questions/13823655/rails-multiple-checkboxes-in-1-db-column-saves-correctly-but-doesnt-show-as-ch
+
+
+
+end block comment    
+<% end %>
+   
+<%# comment..============================================================== %>  
+ 
